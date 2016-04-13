@@ -64,6 +64,6 @@ slot_value.fscore   |     0.1817170      |     0.1742243     |
 ## Contact Information
 You can get the latest updates and participate in discussions on DSTC mailing list
 
-To join the mailing list, send an email to: (mailto:listserv@lists.research.microsoft.com)
+To join the mailing list, send an email to: (listserv@lists.research.microsoft.com)
 putting "subscribe DSTC" in the body of the message (without the quotes).
-To post a message, send your message to: (mailto:dstc@lists.research.microsoft.com).
+To post a message, send your message to: (dstc@lists.research.microsoft.com).
