@@ -6,4 +6,4 @@ In the fifth challenge, we will continue evaluating the dialog state tracking ta
 
 More details about the challenge can be found from the official website (http://workshop.colips.org/dstc5/index.html).
 
-This repository provides the resources including evaluation scripts and ontology for the challenge participants.
+This repository provides the resources including evaluation scripts, ontology, and handbooks for the challenge participants.
