@@ -15,29 +15,29 @@ This repository provides the resources including evaluation scripts, ontology, a
 $ git clone https://github.com/seokhwankim/dstc5.git
 $ cd dstc5/
 ```
-2. Download the archived datasets from the link provided to each registered participant and extract the files into 'data/' directory.
+1. Download the archived datasets from the link provided to each registered participant and extract the files into 'data/' directory.
 ``` shell
 $ tar xvfz dstc5_train_dev.tar.gz
 ```
-3. Install *python-levenshtein* and *fuzzywuzzy* which is a prerequisite for the baseline tracker.
+1. Install *python-levenshtein* and *fuzzywuzzy* which is a prerequisite for the baseline tracker.
 ``` shell
 $ pip install python-levenshtein
 $ pip install fuzzywuzzy
 ```
-4. Run the baseline tracker (with method 1).
+1. Run the baseline tracker (with method 1).
 ``` shell
 $ python scripts/baseline.py --dataset dstc5_dev --dataroot data --trackfile baseline_dev.json --ontology scripts/config/ontology_dstc5.json --method 1
 ```
-5. Check the structure and contents of the tracker output.
+1. Check the structure and contents of the tracker output.
 ``` shell
 $ python scripts/check_main.py --dataset dstc5_dev --dataroot data --ontology scripts/config/ontology_dstc5.json --trackfile baseline_dev.json
 Found no errors, trackfile is valid
 ```
-6. Evaluate the output.
+1. Evaluate the output.
 ``` shell
 $ python scripts/score_main.py --dataset dstc5_dev --dataroot data --trackfile baseline_dev.json --scorefile baseline_dev.score.csv --ontology scripts/config/ontology_dstc5.json
 ```
-7. Print out the summarized results.
+1. Print out the summarized results.
 ``` shell
 $ python scripts/report_main.py --scorefile baseline_dev.score.csv
 
