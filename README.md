@@ -45,10 +45,10 @@ $ python scripts/report_main.py --scorefile baseline_dev.score.csv
 --------------------------------------------------------------
                     |   all.schedule1    |   all.schedule2   |
 --------------------------------------------------------------
-segment.accuracy    |     0.0324349      |     0.0497738     |
-slot_value.precision|     0.2086423      |     0.2091691     |
-slot_value.recall   |     0.1609467      |     0.1492843     |
-slot_value.fscore   |     0.1817170      |     0.1742243     |
+segment.accuracy    |     0.0388305      |     0.0497738     |
+slot_value.precision|     0.2091008      |     0.2091691     |
+slot_value.recall   |     0.1142012      |     0.1492843     |
+slot_value.fscore   |     0.1477229      |     0.1742243     |
 
 
 
@@ -56,9 +56,9 @@ slot_value.fscore   |     0.1817170      |     0.1742243     |
 -----------------------------------------------------------------------------------
                   dataset : dstc5_dev
                  sessions : 2
-          total_wall_time : 23.3559048176
+          total_wall_time : 23.1418588161
                utterances : 3130
-  wall_time_per_utterance : 0.00746195042095
+  wall_time_per_utterance : 0.00739356511698
 ```
 
 ## Contact Information
