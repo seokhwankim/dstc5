@@ -119,8 +119,7 @@ def main(argv):
             sys.stderr.write('%d:%d      \r'%(call.log['session_id'], utter['utter_index']))
             tracker_result = tracker.addUtter(utter, translations)
             if tracker_result is not None:
-                this_session["utterances"].append(tracker_result)
-                # this_session["utterances"].append(copy.deepcopy(tracker_result))
+                this_session["utterances"].append(copy.deepcopy(tracker_result))
         track["sessions"].append(this_session)
     end_time = time.time()
     elapsed_time = end_time - start_time
