@@ -9,7 +9,7 @@ To adapt it for the cross-language execution, the following two different method
 - Method 2: The Chinese utterances are matched to the translated entries in the ontology from English to Chinese.
 """
 
-import argparse, sys, ontology_reader, dataset_walker, time, json
+import argparse, sys, ontology_reader, dataset_walker, time, json, copy
 from fuzzywuzzy import fuzz
 
 class BaselineMethod1(object):
@@ -120,6 +120,7 @@ def main(argv):
             tracker_result = tracker.addUtter(utter, translations)
             if tracker_result is not None:
                 this_session["utterances"].append(tracker_result)
+                # this_session["utterances"].append(copy.deepcopy(tracker_result))
         track["sessions"].append(this_session)
     end_time = time.time()
     elapsed_time = end_time - start_time
