@@ -2,9 +2,10 @@ from HTMLParser import HTMLParser, HTMLParseError
 
 
 class SemanticTagParser(HTMLParser):
-    def __init__(self):
+    def __init__(self, chr_mode=True):
         self.reset()
         HTMLParser.__init__(self)
+        self.__chr_mode = chr_mode
 
     def reset(self):
         self.__word_seq = []
@@ -36,8 +37,13 @@ class SemanticTagParser(HTMLParser):
             raise HTMLParseError('Error2', self.getpos())
 
     def handle_data(self, data):
-        for token in data.strip():
-            if token != ' ':
+        if self.__chr_mode is True:
+            tokens = data.strip()
+        else:
+            tokens = data.strip().split()
+
+        for token in tokens:
+            if self.__chr_mode is False or (self.__chr_mode is True and token != ' '):
                 self.__word_seq.append(token)
                 self.__word_tag_seq.append(
                     (self.__curr_bio, self.__curr_tag, self.__curr_attrs))
