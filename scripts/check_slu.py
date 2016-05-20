@@ -9,17 +9,17 @@ def main(argv):
     sys.path.append(utils_dirname)
     from dataset_walker import dataset_walker
 
-    parser = argparse.ArgumentParser(description='Check the validity of a system output for pilot tasks.')
+    parser = argparse.ArgumentParser(description='Check the validity of a system output for SLU task.')
     parser.add_argument('--dataset', dest='dataset', action='store', metavar='DATASET', required=True, help='The dataset to analyze')
     parser.add_argument('--dataroot',dest='dataroot',action='store', metavar='PATH', required=True, help='Will look for corpus in <destroot>/<dataset>/...')
-    parser.add_argument('--pilotfile',dest='pilotfile',action='store',metavar='JSON_FILE',required=True, help='File containing JSON output')
+    parser.add_argument('--jsonfile',dest='jsonfile',action='store',metavar='JSON_FILE',required=True, help='File containing JSON output')
     parser.add_argument('--ontology',dest='ontology',action='store',metavar='JSON_FILE',required=True, help='JSON Ontology file')
     parser.add_argument('--roletype',dest='roletype',action='store',choices=['GUIDE', 'TOURIST'],required=True, help='Target role')
 
     args = parser.parse_args()
 
     sessions = dataset_walker(args.dataset,dataroot=args.dataroot,labels=False)
-    system_output = json.load(open(args.pilotfile))
+    system_output = json.load(open(args.jsonfile))
 
     tagsets = ontology_reader.OntologyReader(args.ontology).get_pilot_tagsets()
 

@@ -22,7 +22,7 @@ def main(argv):
     parser.add_argument('--dataroot', dest='dataroot',
                         action='store', metavar='PATH', required=True,
                         help='look for corpus in <destroot>/<dataset>/...')
-    parser.add_argument('--pilotfile', dest='pilotfile',
+    parser.add_argument('--jsonfile', dest='jsonfile',
                         action='store', metavar='JSON_FILE', required=True,
                         help='File containing JSON output')
     parser.add_argument('--ontology', dest='ontology',
@@ -40,7 +40,7 @@ def main(argv):
     sessions = dataset_walker(
         args.dataset, dataroot=args.dataroot, labels=True)
 
-    system_output = json.load(open(args.pilotfile))
+    system_output = json.load(open(args.jsonfile))
 
     stats = {}
     stats['semantic_tagged'] = {}
