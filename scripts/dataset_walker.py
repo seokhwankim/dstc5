@@ -2,23 +2,24 @@
 
 """
 This module makes it easy to iterate through a dataset specified by file list (.flist) in scripts/config.
-When the script is called without arguments it outputs the content of all the training data on the terminal. 
 """
 
-import os, json
+import os
+import json
+
 
 class dataset_walker(object):
-    def __init__(self, dataset, labels=False, translations=True, dataroot=None):
-        if "[" in dataset :
+    def __init__(self, dataset, labels=False, translations=True, dataroot=None, task='MAIN', roletype=None):
+        if "[" in dataset:
             self.datasets = json.loads(dataset)
-        elif type(dataset) == type([]) :
-            self.datasets= dataset
+        elif type(dataset) == type([]):
+            self.datasets = dataset
         else:
             self.datasets = [dataset]
             self.dataset = dataset
         self.install_root = os.path.abspath(os.path.dirname(os.path.abspath(__file__)))
-        self.dataset_session_lists = [os.path.join(self.install_root,'config', dataset_id + '.flist') for dataset_id in self.datasets]
-           
+        self.dataset_session_lists = [os.path.join(self.install_root, 'config', dataset_id + '.flist') for dataset_id in self.datasets]
+
         self.labels = labels
         self.translations = translations
 
@@ -30,20 +31,44 @@ class dataset_walker(object):
 
         # load dataset (list of calls)
         self.session_list = []
-        for dataset_session_list in self.dataset_session_lists :
+        for dataset_session_list in self.dataset_session_lists:
             f = open(dataset_session_list)
             for line in f:
                 line = line.strip()
                 if (line in self.session_list):
                     raise RuntimeError,'Call appears twice: %s' % (line)
                 self.session_list.append(line)
-            f.close()   
-        
+            f.close()
+
+        if task == 'MAIN' or task == 'SLU':
+            self.logfile = 'log.json'
+            self.labelfile = 'label.json'
+        elif task == 'SAP':
+            if roletype == 'Tourist':
+                self.logfile = 'sap.tourist.in.json'
+                self.labelfile = 'sap.tourist.label.json'
+            elif roletype == 'Guide':
+                self.logfile = 'sap.guide.in.json'
+                self.labelfile = 'sap.guide.label.json'
+            else:
+                raise RuntimeError, 'Wrong roletype argument: %s' % (roletype)
+        elif task == 'SLG':
+            if roletype == 'Tourist':
+                self.logfile = 'slg.tourist.in.json'
+                self.labelfile = 'slg.tourist.label.json'
+            elif roletype == 'Guide':
+                self.logfile = 'slg.guide.in.json'
+                self.labelfile = 'slg.guide.label.json'
+            else:
+                raise RuntimeError, 'Wrong roletype argument: %s' % (roletype)
+        else:
+            raise RuntimeError, 'Wrong task identifier: %s' % (task)
+
     def __iter__(self):
         for session_id in self.session_list:
             session_id_list = session_id.split('/')
-            session_dirname = os.path.join(self.dataroot,*session_id_list)
-            applog_filename = os.path.join(session_dirname,'log.json')
+            session_dirname = os.path.join(self.dataroot, *session_id_list)
+            applog_filename = os.path.join(session_dirname, self.logfile)
 
             if (self.translations):
                 translations_filename = os.path.join(session_dirname, 'translations.json')
@@ -53,7 +78,7 @@ class dataset_walker(object):
                 translations_filename = None
 
             if (self.labels):
-                labels_filename = os.path.join(session_dirname,'label.json')
+                labels_filename = os.path.join(session_dirname, self.labelfile)
                 if (not os.path.exists(labels_filename)):
                     raise RuntimeError,'Cant score : cant open labels file %s' % (labels_filename)
             else:
@@ -62,9 +87,10 @@ class dataset_walker(object):
             call = Call(applog_filename, translations_filename, labels_filename)
             call.dirname = session_dirname
             yield call
+
     def __len__(self, ):
         return len(self.session_list)
-    
+
 
 class Call(object):
     def __init__(self, applog_filename, translations_filename, labels_filename):
@@ -126,9 +152,9 @@ class Call(object):
                                 labels['speech_act'][i]['attributes'][j] = attr
 
                     yield (log, None, labels)
-            else: 
+            else:
                 for log in self.log['utterances']:
                     yield (log, None, None)
-                
+
     def __len__(self, ):
         return len(self.log['utterances'])
