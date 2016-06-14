@@ -173,35 +173,34 @@ def main(argv):
 
         instance = {'prev_turn_act': None, 'curr_semantic_tags': None, 'prev_semantic_tags': None, 'dist_from_prev_turn': 0}
 
-        for call in testset:
-            for (log_utter, translations, label_utter) in call:
-                if log_utter['speaker'].lower() == args.roletype.lower():
-                    sap_result = {'utter_index': log_utter['utter_index']}
+        for (log_utter, translations, label_utter) in call:
+            if log_utter['speaker'].lower() == args.roletype.lower():
+                sap_result = {'utter_index': log_utter['utter_index']}
 
-                    instance['curr_semantic_tags'] = log_utter['semantic_tags']
-                    instance['dist_from_prev_turn'] += 1
+                instance['curr_semantic_tags'] = log_utter['semantic_tags']
+                instance['dist_from_prev_turn'] += 1
 
-                    pred_act = sap.pred(copy.deepcopy(instance))
-                    combined_act = {}
-                    for act_label in reduce(operator.add, pred_act):
-                        m = re.match('^([^_]+)_(.+)$', act_label)
-                        act = m.group(1)
-                        attr = m.group(2)
-                        if act not in combined_act:
-                            combined_act[act] = []
-                        if attr not in combined_act[act]:
-                            combined_act[act].append(attr)
+                pred_act = sap.pred(copy.deepcopy(instance))
+                combined_act = {}
+                for act_label in reduce(operator.add, pred_act):
+                    m = re.match('^([^_]+)_(.+)$', act_label)
+                    act = m.group(1)
+                    attr = m.group(2)
+                    if act not in combined_act:
+                        combined_act[act] = []
+                    if attr not in combined_act[act]:
+                        combined_act[act].append(attr)
 
-                    sap_result['speech_act'] = []
-                    for act in combined_act:
-                        attr = combined_act[act]
-                        sap_result['speech_act'].append({'act': act, 'attributes': attr})
+                sap_result['speech_act'] = []
+                for act in combined_act:
+                    attr = combined_act[act]
+                    sap_result['speech_act'].append({'act': act, 'attributes': attr})
 
-                    this_session['utterances'].append(sap_result)
-                else:
-                    instance['prev_turn_act'] = log_utter['speech_act']
-                    instance['dist_from_prev_turn'] = 0
-                instance['prev_semantic_tags'] = log_utter['semantic_tags']
+                this_session['utterances'].append(sap_result)
+            else:
+                instance['prev_turn_act'] = log_utter['speech_act']
+                instance['dist_from_prev_turn'] = 0
+            instance['prev_semantic_tags'] = log_utter['semantic_tags']
 
         output['sessions'].append(this_session)
     sys.stderr.write('Done\n')
