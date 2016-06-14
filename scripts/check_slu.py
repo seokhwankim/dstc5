@@ -44,7 +44,7 @@ class TrackChecker():
         else:
             print "Found",len(self.errors),"errors:"
         for context, error in self.errors:
-            print " ".join(map(str, context)), "-", error
+            print " ".join(map(str, unicode(context))), "-", error
 
     def check(self):
     # first check the top-level stuff
@@ -82,19 +82,17 @@ class TrackChecker():
                 self.add_error((session_id,),"session-id does not match")
 
             log_utter_list = []
-            label_utter_list = []
 
-            for log_utter, _, label_utter in session:
+            for log_utter, _, _ in session:
                 if (self.roletype == 'GUIDE' and log_utter['speaker'] == 'Guide') or (self.roletype == 'TOURIST' and log_utter['speaker'] == 'Tourist'):
                     log_utter_list.append(log_utter)
-                    label_utter_list.append(label_utter)
 
             # check number of utterances
             if len(log_utter_list) != len(track_session["utterances"]) :
                 self.add_error((session_id,),"number of utterances spoken by %s does not match" % (self.roletype,))
 
             # now iterate through turns
-            for log_utter, label_utter, track_utter in zip(log_utter_list, label_utter_list, track_session["utterances"]):
+            for log_utter, track_utter in zip(log_utter_list, track_session["utterances"]):
                 # check utter index
                 if log_utter['utter_index'] != track_utter['utter_index']:
                     self.add_error((session_id, "utterance", log_utter['utter_index'], track_utter['utter_index']), "utter_index does not match")
