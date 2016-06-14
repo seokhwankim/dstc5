@@ -44,19 +44,19 @@ class dataset_walker(object):
             self.logfile = 'log.json'
             self.labelfile = 'label.json'
         elif task == 'SAP':
-            if roletype == 'Tourist':
+            if roletype == 'tourist':
                 self.logfile = 'sap.tourist.in.json'
                 self.labelfile = 'sap.tourist.label.json'
-            elif roletype == 'Guide':
+            elif roletype == 'guide':
                 self.logfile = 'sap.guide.in.json'
                 self.labelfile = 'sap.guide.label.json'
             else:
                 raise RuntimeError, 'Wrong roletype argument: %s' % (roletype)
         elif task == 'SLG':
-            if roletype == 'Tourist':
+            if roletype == 'tourist':
                 self.logfile = 'slg.tourist.in.json'
                 self.labelfile = 'slg.tourist.label.json'
-            elif roletype == 'Guide':
+            elif roletype == 'guide':
                 self.logfile = 'slg.guide.in.json'
                 self.labelfile = 'slg.guide.label.json'
             else:
