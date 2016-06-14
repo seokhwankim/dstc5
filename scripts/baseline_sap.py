@@ -9,8 +9,6 @@ Then, the models are used in analyzing the English translation of each Chinese u
 Finally, the predicted annotations on the English side are projected to the original Chinese utterances.
 """
 
-import nltk
-
 from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 from sklearn.multiclass import OneVsRestClassifier
