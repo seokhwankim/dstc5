@@ -256,7 +256,7 @@ def main(argv):
     start_time = time.time()
 
     testset = dataset_walker.dataset_walker(args.testset, dataroot=args.dataroot, labels=False, translations=True)
-    sys.stderr.write('Loading training instances ... ')
+    sys.stderr.write('Loading testing instances ... ')
     for call in testset:
         this_session = {"session_id": call.log["session_id"], "utterances": []}
         for (log_utter, translations, label_utter) in call:
