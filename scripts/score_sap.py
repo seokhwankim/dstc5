@@ -38,7 +38,8 @@ def main(argv):
     args = parser.parse_args()
 
     sessions = dataset_walker(
-        args.dataset, dataroot=args.dataroot, labels=True)
+        args.dataset, dataroot=args.dataroot, labels=True,
+        task='SAP', roletype=args.roletype.lower())
 
     system_output = json.load(open(args.jsonfile))
 
