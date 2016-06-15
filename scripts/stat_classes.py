@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from calc_amfm_bleu import calcScoresBleuAMFM
 
 
 class Stat(object):
@@ -84,3 +85,30 @@ class Stat_Frame_Precision_Recall(Stat_Precision_Recall):
                 self.fp += int((s, v) not in ref_slot_value_list)
             for (s, v) in ref_slot_value_list:
                 self.fn += int((s, v) not in pred_slot_value_list)
+
+
+class Stat_BLEU_AM_FM(Stat):
+    def __init__(self, lang):
+        self.bleu = 0.0
+        self.am_fm = 0.0
+        self.alpha = 0.5
+        self.num_sent = 0
+        self.lang = lang
+        self.cs = calcScoresBleuAMFM(LANGUAGE=lang)
+
+    def add(self, pred, ref):
+        self.num_sent += 1
+        ref, pred = self.cs.doProcessFromStrings(ref, pred, self.num_sent, self.lang)
+        b = self.cs.calculateBLEUMetric(ref, pred, lang=self.lang)[0][-1]
+        self.bleu += b
+        am = self.cs.calculateAMMetric(ref, pred, lang=self.lang)
+        fm = self.cs.calculateFMMetric(ref, pred, lang=self.lang)
+        am_fm = (self.alpha)*am + (1.0 - self.alpha)*fm
+        self.am_fm += am_fm
+        if self.lang != 'en':
+            ref = ''.join(ref.split())
+            pred = ''.join(pred.split())
+        print('num:%d ref: %s | pred: %s | bleu: %f | am: %f | fm: %f | am_fm: %f' %(self.num_sent, ref, pred, b, am, fm, am_fm))
+
+    def results(self,):
+        return ("am_fm_avg", self.num_sent, self.am_fm/self.num_sent), ("bleu_avg", self.num_sent, self.bleu/self.num_sent)

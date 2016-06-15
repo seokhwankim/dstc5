@@ -99,3 +99,7 @@ def eval_semantics(ref_tagged, pred_tagged, stat_semantics):
         parser_pred.close()
     except HTMLParseError, err:
         print "HTMLParseError: %s" % err
+
+
+def eval_utt(ref, pred, stat_text):
+    stat_text['all'].add(ref, pred)
