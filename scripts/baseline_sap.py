@@ -105,7 +105,7 @@ class SimpleSAP:
         sa_feats = [x for x, _ in self.__speech_act_instance_list]
         sa_labels = [y for _, y in self.__speech_act_instance_list]
 
-        self.__speech_act_lb = preprocessing.LabelBinarizer()
+        self.__speech_act_lb = preprocessing.MultiLabelBinarizer()
         sa_labels = self.__speech_act_lb.fit_transform(sa_labels)
 
         self.__speech_act_model = Pipeline([
