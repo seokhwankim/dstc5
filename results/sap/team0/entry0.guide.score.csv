@@ -1,0 +1,7 @@
+task, subtask, schedule, stat, N, result
+SAP, speech_act, all, precision, 850, 0.278823529412
+SAP, speech_act, all, recall, 1669, 0.142001198322
+SAP, speech_act, all, f1, 2282, 0.188169908694
+SAP, speech_act, act, precision, 818, 0.470660146699
+SAP, speech_act, act, recall, 1239, 0.310734463277
+SAP, speech_act, act, f1, 1672, 0.374331550802

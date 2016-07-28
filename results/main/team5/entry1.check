@@ -1,0 +1,494 @@
+Found 493 errors:
+66 utterance 485 NEIGHBOURHOOD Lavender - repeated value
+66 utterance 489 NEIGHBOURHOOD Lavender - repeated value
+66 utterance 491 NEIGHBOURHOOD Lavender - repeated value
+66 utterance 806 FROM Merlion - repeated value
+66 utterance 827 TO Merlion - repeated value
+66 utterance 834 FROM Merlion - repeated value
+66 utterance 863 INFO Exhibit - repeated value
+66 utterance 866 INFO Exhibit - repeated value
+66 utterance 899 MEAL_TIME Dinner - repeated value
+66 utterance 1023 DISH Chilli crab - repeated value
+66 utterance 1024 DISH Chilli crab - repeated value
+66 utterance 1074 DISH Chilli crab - repeated value
+66 utterance 1075 DISH Chilli crab - repeated value
+66 utterance 1167 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1176 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1178 NEIGHBOURHOOD Little India - repeated value
+66 utterance 1181 NEIGHBOURHOOD Little India - repeated value
+66 utterance 1182 NEIGHBOURHOOD Little India - repeated value
+66 utterance 1205 TO Little India - repeated value
+66 utterance 1291 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1301 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1302 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1303 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1319 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1330 TYPE_OF_PLACE Restaurant - repeated value
+66 utterance 1335 DISH Chilli crab - repeated value
+66 utterance 1338 DISH Chilli crab - repeated value
+66 utterance 1371 NEIGHBOURHOOD Bugis - repeated value
+66 utterance 1372 NEIGHBOURHOOD Bugis - repeated value
+66 utterance 1445 DISH Durian - repeated value
+66 utterance 1446 DISH Durian - repeated value
+66 utterance 1496 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1497 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1498 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1525 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1528 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1550 TO Sentosa - repeated value
+66 utterance 1551 TO Sentosa - repeated value
+66 utterance 1557 TO Beach Station - repeated value
+66 utterance 1579 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1586 PLACE Underwater World - repeated value
+66 utterance 1611 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1614 PLACE Universal Studios Singapore - repeated value
+66 utterance 1615 PLACE Universal Studios Singapore - repeated value
+66 utterance 1616 NEIGHBOURHOOD Sentosa - repeated value
+66 utterance 1617 PLACE Universal Studios Singapore - repeated value
+66 utterance 1618 PLACE Universal Studios Singapore - repeated value
+66 utterance 1764 TO Chinatown - repeated value
+66 utterance 1764 FROM Chinatown - repeated value
+66 utterance 1828 NEIGHBOURHOOD Chinatown - repeated value
+66 utterance 1843 TYPE_OF_PLACE Hindu temple - repeated value
+66 utterance 1845 TYPE_OF_PLACE Hindu temple - repeated value
+66 utterance 1847 TYPE_OF_PLACE Hindu temple - repeated value
+67 utterance 204 TO City Hall MRT Station - repeated value
+67 utterance 204 FROM City Hall MRT Station - repeated value
+67 utterance 205 TO City Hall MRT Station - repeated value
+67 utterance 205 FROM City Hall MRT Station - repeated value
+67 utterance 458 DISH Hainanese chicken rice - repeated value
+67 utterance 466 DISH Chilli crab - repeated value
+67 utterance 474 INFO Pricerange - repeated value
+67 utterance 475 INFO Ingredient - repeated value
+67 utterance 475 DISH Hainanese chicken rice - repeated value
+67 utterance 477 CUISINE Chinese cuisine - repeated value
+67 utterance 478 CUISINE Singaporean cuisine - repeated value
+67 utterance 478 PLACE Traders Hotel Singapore - repeated value
+67 utterance 480 INFO Location - repeated value
+67 utterance 480 PLACE Indochine Group - repeated value
+67 utterance 483 INFO Pricerange - repeated value
+67 utterance 538 DISH Chilli crab - repeated value
+67 utterance 541 DISH Chilli crab - repeated value
+67 utterance 542 TYPE_OF_PLACE Restaurant - repeated value
+67 utterance 543 DISH Chilli crab - repeated value
+67 utterance 661 MEAL_TIME Dinner - repeated value
+67 utterance 750 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 751 TYPE_OF_PLACE Shopping mall - repeated value
+67 utterance 753 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 881 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 884 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 890 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 895 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 898 INFO Tax refund - repeated value
+67 utterance 899 INFO Tax refund - repeated value
+67 utterance 994 FROM Orchard Road - repeated value
+67 utterance 997 FROM Orchard Road - repeated value
+67 utterance 1023 PLACE Orchard Road - repeated value
+67 utterance 1024 NEIGHBOURHOOD Orchard - repeated value
+67 utterance 1035 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 1036 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 1037 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 1041 NEIGHBOURHOOD Little India - repeated value
+67 utterance 1042 NEIGHBOURHOOD Little India - repeated value
+67 utterance 1044 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 1046 NEIGHBOURHOOD Little India - repeated value
+67 utterance 1051 NEIGHBOURHOOD Little India - repeated value
+67 utterance 1168 NEIGHBOURHOOD Chinatown - repeated value
+67 utterance 1202 TYPE_OF_PLACE Hindu temple - repeated value
+67 utterance 1203 TYPE_OF_PLACE Hindu temple - repeated value
+67 utterance 1204 TYPE_OF_PLACE Hindu temple - repeated value
+67 utterance 1235 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1236 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1239 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1246 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1249 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1276 TO Sentosa - repeated value
+67 utterance 1277 TO Sentosa - repeated value
+67 utterance 1279 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1280 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1283 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1284 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1285 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1291 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1299 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1302 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1341 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1347 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1351 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1373 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1378 PLACE Underwater World - repeated value
+67 utterance 1379 PLACE Underwater World - repeated value
+67 utterance 1382 PLACE Underwater World - repeated value
+67 utterance 1383 PLACE Underwater World - repeated value
+67 utterance 1384 PLACE Underwater World - repeated value
+67 utterance 1386 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1393 PLACE Universal Studios Singapore - repeated value
+67 utterance 1394 PLACE Universal Studios Singapore - repeated value
+67 utterance 1396 PLACE Universal Studios Singapore - repeated value
+67 utterance 1397 PLACE Universal Studios Singapore - repeated value
+67 utterance 1428 TIME Morning - repeated value
+67 utterance 1444 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1445 NEIGHBOURHOOD Clarke Quay - repeated value
+67 utterance 1447 NEIGHBOURHOOD Clarke Quay - repeated value
+67 utterance 1448 NEIGHBOURHOOD Clarke Quay - repeated value
+67 utterance 1450 NEIGHBOURHOOD Sentosa - repeated value
+67 utterance 1516 DRINK Singapore Sling - repeated value
+67 utterance 1517 DRINK Singapore Sling - repeated value
+67 utterance 1523 DRINK Singapore Sling - repeated value
+67 utterance 1533 NEIGHBOURHOOD Clarke Quay - repeated value
+69 utterance 63 TYPE_OF_PLACE Shopping street - repeated value
+69 utterance 183 NEIGHBOURHOOD Little India - repeated value
+69 utterance 185 NEIGHBOURHOOD Little India - repeated value
+69 utterance 187 NEIGHBOURHOOD Little India - repeated value
+69 utterance 190 NEIGHBOURHOOD Little India - repeated value
+69 utterance 204 NEIGHBOURHOOD Little India - repeated value
+69 utterance 305 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 318 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 320 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 321 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 329 PLACE Underwater World - repeated value
+69 utterance 391 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 439 NEIGHBOURHOOD Clarke Quay - repeated value
+69 utterance 443 NEIGHBOURHOOD Clarke Quay - repeated value
+69 utterance 486 NEIGHBOURHOOD Clarke Quay - repeated value
+69 utterance 536 NEIGHBOURHOOD Chinatown - repeated value
+69 utterance 538 NEIGHBOURHOOD Chinatown - repeated value
+69 utterance 664 NEIGHBOURHOOD Chinatown - repeated value
+69 utterance 732 PLACE Night Safari - repeated value
+69 utterance 733 PLACE Night Safari - repeated value
+69 utterance 753 PLACE Night Safari - repeated value
+69 utterance 791 PLACE Night Safari - repeated value
+69 utterance 795 NEIGHBOURHOOD Orchard - repeated value
+69 utterance 800 TYPE_OF_PLACE Shopping mall - repeated value
+69 utterance 862 INFO Transfer - repeated value
+69 utterance 1031 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1036 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1042 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1043 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1051 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1052 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1053 NEIGHBOURHOOD Little India - repeated value
+69 utterance 1127 NEIGHBOURHOOD Sentosa - repeated value
+69 utterance 1206 PLACE Universal Studios Singapore - repeated value
+69 utterance 1207 PLACE Universal Studios Singapore - repeated value
+69 utterance 1208 PLACE Universal Studios Singapore - repeated value
+69 utterance 1209 PLACE Universal Studios Singapore - repeated value
+69 utterance 1210 PLACE Universal Studios Singapore - repeated value
+69 utterance 1339 NEIGHBOURHOOD Orchard - repeated value
+69 utterance 1451 NEIGHBOURHOOD Chinatown - repeated value
+69 utterance 1459 NEIGHBOURHOOD Chinatown - repeated value
+84 utterance 30 NEIGHBOURHOOD Sentosa - repeated value
+84 utterance 69 NEIGHBOURHOOD Sentosa - repeated value
+84 utterance 71 NEIGHBOURHOOD Sentosa - repeated value
+84 utterance 76 NEIGHBOURHOOD Sentosa - repeated value
+84 utterance 96 TO Sentosa - repeated value
+84 utterance 99 TO Sentosa - repeated value
+84 utterance 99 TYPE Shuttle bus - repeated value
+84 utterance 101 TO Sentosa - repeated value
+84 utterance 101 TYPE Shuttle bus - repeated value
+84 utterance 104 TYPE Shuttle bus - repeated value
+84 utterance 107 TYPE Shuttle bus - repeated value
+84 utterance 109 TYPE Shuttle bus - repeated value
+84 utterance 218 TO Sentosa - repeated value
+84 utterance 227 FROM Sentosa - repeated value
+84 utterance 232 FROM VivoCity - repeated value
+84 utterance 233 FROM VivoCity - repeated value
+84 utterance 306 TO Sentosa - repeated value
+84 utterance 320 TO City Hall MRT Station - repeated value
+84 utterance 320 FROM City Hall MRT Station - repeated value
+84 utterance 322 STATION City Hall MRT Station - repeated value
+84 utterance 322 FROM City Hall MRT Station - repeated value
+84 utterance 570 TO City Hall MRT Station - repeated value
+84 utterance 570 FROM City Hall MRT Station - repeated value
+84 utterance 633 TYPE Shuttle bus - repeated value
+84 utterance 766 DISH Hainanese chicken rice - repeated value
+84 utterance 767 DISH Hainanese chicken rice - repeated value
+84 utterance 899 DISH Hainanese chicken rice - repeated value
+84 utterance 904 DISH Hainanese chicken rice - repeated value
+84 utterance 906 DISH Hainanese chicken rice - repeated value
+84 utterance 981 NEIGHBOURHOOD Little India - repeated value
+84 utterance 985 NEIGHBOURHOOD Little India - repeated value
+85 utterance 62 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 71 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 72 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 77 TO Sentosa - repeated value
+85 utterance 92 TO Sentosa - repeated value
+85 utterance 93 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 104 TO Sentosa - repeated value
+85 utterance 144 TO Sentosa - repeated value
+85 utterance 146 TO Sentosa - repeated value
+85 utterance 146 FROM Sentosa - repeated value
+85 utterance 178 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 181 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 231 PLACE Underwater World - repeated value
+85 utterance 235 PLACE Underwater World - repeated value
+85 utterance 236 PLACE Underwater World - repeated value
+85 utterance 239 PLACE Underwater World - repeated value
+85 utterance 243 PLACE Underwater World - repeated value
+85 utterance 258 INFO Opening hour - repeated value
+85 utterance 264 PLACE Underwater World - repeated value
+85 utterance 428 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 429 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 434 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 435 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 563 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 685 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 686 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 706 PLACE Esplanade - Theatres on the Bay - repeated value
+85 utterance 707 PLACE Esplanade - Theatres on the Bay - repeated value
+85 utterance 781 FROM Merlion - repeated value
+85 utterance 846 INFO Exhibit - repeated value
+85 utterance 867 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 1302 TO Sentosa - repeated value
+85 utterance 1307 TO Sentosa - repeated value
+85 utterance 1328 TO Sentosa - repeated value
+85 utterance 1332 TO Sentosa - repeated value
+85 utterance 1341 TO Sentosa - repeated value
+85 utterance 1350 INFO Transfer - repeated value
+85 utterance 1372 FROM Merlion - repeated value
+85 utterance 1598 DISH Chilli crab - repeated value
+85 utterance 1656 DISH Carrot cake - repeated value
+85 utterance 1658 DISH Carrot cake - repeated value
+85 utterance 1659 DISH Carrot cake - repeated value
+85 utterance 1699 DISH Hainanese chicken rice - repeated value
+85 utterance 1700 DISH Hainanese chicken rice - repeated value
+85 utterance 1705 DISH Hainanese chicken rice - repeated value
+85 utterance 1707 DISH Hainanese chicken rice - repeated value
+85 utterance 1710 DISH Hainanese chicken rice - repeated value
+85 utterance 1712 DISH Hainanese chicken rice - repeated value
+85 utterance 1721 DISH Hainanese chicken rice - repeated value
+85 utterance 1789 PLACE Singapore Botanic Gardens - repeated value
+85 utterance 1789 NEIGHBOURHOOD Singapore River - repeated value
+85 utterance 1810 INFO Location - repeated value
+85 utterance 1843 NEIGHBOURHOOD Sentosa - repeated value
+85 utterance 1891 DISH Hainanese chicken rice - repeated value
+85 utterance 1892 DISH Hainanese chicken rice - repeated value
+85 utterance 1907 NEIGHBOURHOOD Chinatown - repeated value
+85 utterance 1924 DISH Hainanese chicken rice - repeated value
+86 utterance 162 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 163 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 164 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 200 MEAL_TIME Breakfast - repeated value
+86 utterance 202 MEAL_TIME Breakfast - repeated value
+86 utterance 232 PLACE Universal Studios Singapore - repeated value
+86 utterance 233 PLACE Universal Studios Singapore - repeated value
+86 utterance 236 PLACE Universal Studios Singapore - repeated value
+86 utterance 237 PLACE Universal Studios Singapore - repeated value
+86 utterance 238 INFO Exhibit - repeated value
+86 utterance 238 PLACE Universal Studios Singapore - repeated value
+86 utterance 240 PLACE Universal Studios Singapore - repeated value
+86 utterance 241 PLACE Universal Studios Singapore - repeated value
+86 utterance 316 TIME Morning - repeated value
+86 utterance 325 TYPE MRT - repeated value
+86 utterance 326 TYPE MRT - repeated value
+86 utterance 327 TYPE MRT - repeated value
+86 utterance 328 TYPE MRT - repeated value
+86 utterance 329 TYPE MRT - repeated value
+86 utterance 330 TYPE MRT - repeated value
+86 utterance 331 TYPE MRT - repeated value
+86 utterance 332 TYPE MRT - repeated value
+86 utterance 405 INFO Location - repeated value
+86 utterance 564 NEIGHBOURHOOD Sentosa - repeated value
+86 utterance 578 NEIGHBOURHOOD Sentosa - repeated value
+86 utterance 579 NEIGHBOURHOOD Sentosa - repeated value
+86 utterance 586 NEIGHBOURHOOD Sentosa - repeated value
+86 utterance 679 INFO Exhibit - repeated value
+86 utterance 709 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 714 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 715 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 718 NEIGHBOURHOOD Orchard - repeated value
+86 utterance 730 INFO Opening hour - repeated value
+86 utterance 941 PLACE Universal Studios Singapore - repeated value
+86 utterance 942 PLACE Universal Studios Singapore - repeated value
+86 utterance 1019 FROM Orchard Road - repeated value
+86 utterance 1028 FROM Orchard Road - repeated value
+86 utterance 1060 TO Funan DigitaLife Mall - repeated value
+87 utterance 30 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 37 NEIGHBOURHOOD Kampong Glam - repeated value
+87 utterance 51 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 52 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 53 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 56 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 58 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 59 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 127 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 137 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 141 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 142 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 192 TO Sentosa - repeated value
+87 utterance 194 TO Sentosa - repeated value
+87 utterance 200 TO Sentosa - repeated value
+87 utterance 237 PLACE Underwater World - repeated value
+87 utterance 238 PLACE Underwater World - repeated value
+87 utterance 240 PLACE Underwater World - repeated value
+87 utterance 264 PLACE Underwater World - repeated value
+87 utterance 339 PLACE Universal Studios Singapore - repeated value
+87 utterance 340 PLACE Universal Studios Singapore - repeated value
+87 utterance 341 PLACE Universal Studios Singapore - repeated value
+87 utterance 342 PLACE Universal Studios Singapore - repeated value
+87 utterance 344 PLACE Universal Studios Singapore - repeated value
+87 utterance 346 PLACE Universal Studios Singapore - repeated value
+87 utterance 563 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 575 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 576 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 581 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 596 NEIGHBOURHOOD Sentosa - repeated value
+87 utterance 626 TYPE_OF_PLACE Resort - repeated value
+87 utterance 776 TO Outram Park MRT Station - repeated value
+87 utterance 778 TO Outram Park MRT Station - repeated value
+87 utterance 792 TO Sentosa - repeated value
+87 utterance 824 FROM Merlion - repeated value
+87 utterance 855 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 856 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 858 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 859 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 861 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 872 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 875 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 876 NEIGHBOURHOOD Chinatown - repeated value
+87 utterance 1009 FROM Merlion - repeated value
+87 utterance 1514 DISH Chilli crab - repeated value
+87 utterance 1515 DISH Chilli crab - repeated value
+87 utterance 1518 DISH Chilli crab - repeated value
+87 utterance 1712 DISH Hainanese chicken rice - repeated value
+87 utterance 1719 DISH Hainanese chicken rice - repeated value
+95 utterance 68 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 70 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 76 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 79 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 80 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 82 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 83 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 86 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 91 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 92 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 94 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 98 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 122 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 123 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 149 TYPE_OF_PLACE Resort - repeated value
+95 utterance 357 NEIGHBOURHOOD Sentosa - repeated value
+95 utterance 466 FROM Merlion - repeated value
+95 utterance 501 TYPE_OF_PLACE Market - repeated value
+95 utterance 619 MEAL_TIME Dinner - repeated value
+95 utterance 658 DISH Black pepper crab - repeated value
+95 utterance 689 DISH Black pepper crab - repeated value
+95 utterance 692 DISH Black pepper crab - repeated value
+95 utterance 707 DISH Black pepper crab - repeated value
+95 utterance 708 DISH Black pepper crab - repeated value
+95 utterance 742 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 743 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 761 CUISINE Seafood - repeated value
+95 utterance 761 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 762 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 815 DISH Hainanese chicken rice - repeated value
+95 utterance 816 DISH Hainanese chicken rice - repeated value
+95 utterance 823 DISH Hainanese chicken rice - repeated value
+95 utterance 824 DISH Hainanese chicken rice - repeated value
+95 utterance 825 DISH Hainanese chicken rice - repeated value
+95 utterance 840 INFO Ingredient - repeated value
+95 utterance 843 INFO Ingredient - repeated value
+95 utterance 845 INFO Ingredient - repeated value
+95 utterance 846 INFO Ingredient - repeated value
+95 utterance 950 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 1092 TYPE_OF_PLACE Shopping street - repeated value
+95 utterance 1104 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1105 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1106 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1107 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1108 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1110 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1111 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1112 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1127 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1181 NEIGHBOURHOOD Chinatown - repeated value
+95 utterance 1225 NEIGHBOURHOOD Orchard - repeated value
+95 utterance 1226 NEIGHBOURHOOD Orchard - repeated value
+95 utterance 1228 TYPE_OF_PLACE Shopping street - repeated value
+95 utterance 1228 NEIGHBOURHOOD Orchard - repeated value
+95 utterance 1237 TYPE_OF_PLACE Shopping mall - repeated value
+95 utterance 1238 NEIGHBOURHOOD Orchard - repeated value
+95 utterance 1242 TO Orchard Road - repeated value
+95 utterance 1246 TYPE_OF_PLACE Restaurant - repeated value
+95 utterance 1249 DRINK Coffee - repeated value
+95 utterance 1255 NEIGHBOURHOOD Chinatown - repeated value
+98 utterance 283 PLACE Night Safari - repeated value
+98 utterance 323 PLACE Night Safari - repeated value
+98 utterance 328 PLACE Night Safari - repeated value
+98 utterance 335 PLACE Night Safari - repeated value
+98 utterance 385 PLACE Night Safari - repeated value
+98 utterance 498 DISH Hainanese chicken rice - repeated value
+98 utterance 502 DISH Hainanese chicken rice - repeated value
+98 utterance 520 PLACE Orchard Road - repeated value
+98 utterance 522 TYPE_OF_PLACE Shopping mall - repeated value
+98 utterance 523 TYPE_OF_PLACE Shopping mall - repeated value
+98 utterance 548 INFO Exhibit - repeated value
+98 utterance 549 INFO Exhibit - repeated value
+98 utterance 551 INFO Exhibit - repeated value
+98 utterance 554 INFO Exhibit - repeated value
+98 utterance 555 INFO Exhibit - repeated value
+98 utterance 556 INFO Exhibit - repeated value
+98 utterance 558 INFO Exhibit - repeated value
+98 utterance 586 PLACE Esplanade - Theatres on the Bay - repeated value
+98 utterance 587 PLACE Esplanade - Theatres on the Bay - repeated value
+98 utterance 590 TYPE_OF_PLACE Theatre - repeated value
+98 utterance 596 TYPE MRT - repeated value
+98 utterance 597 TYPE MRT - repeated value
+98 utterance 598 TYPE MRT - repeated value
+98 utterance 599 TYPE MRT - repeated value
+98 utterance 600 TYPE MRT - repeated value
+98 utterance 601 TYPE MRT - repeated value
+98 utterance 807 TYPE_OF_PLACE Buddhist temple - repeated value
+98 utterance 810 TYPE_OF_PLACE Buddhist temple - repeated value
+98 utterance 811 TYPE_OF_PLACE Buddhist temple - repeated value
+98 utterance 812 TYPE_OF_PLACE Buddhist temple - repeated value
+98 utterance 1009 TYPE_OF_PLACE Shopping mall - repeated value
+98 utterance 1032 NEIGHBOURHOOD Orchard - repeated value
+98 utterance 1035 TYPE_OF_PLACE Market - repeated value
+99 utterance 115 FROM Chinatown MRT Station - repeated value
+99 utterance 157 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 158 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 161 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 167 TO Chinatown MRT Station - repeated value
+99 utterance 168 TO Chinatown MRT Station - repeated value
+99 utterance 213 NEIGHBOURHOOD Clarke Quay - repeated value
+99 utterance 214 NEIGHBOURHOOD Clarke Quay - repeated value
+99 utterance 228 TYPE_OF_PLACE Nightclub - repeated value
+99 utterance 229 TYPE_OF_PLACE Nightclub - repeated value
+99 utterance 521 NEIGHBOURHOOD Sentosa - repeated value
+99 utterance 526 NEIGHBOURHOOD Sentosa - repeated value
+99 utterance 564 NEIGHBOURHOOD Sentosa - repeated value
+99 utterance 567 PLACE Underwater World - repeated value
+99 utterance 568 PLACE Underwater World - repeated value
+99 utterance 569 PLACE Underwater World - repeated value
+99 utterance 570 PLACE Underwater World - repeated value
+99 utterance 661 PLACE Underwater World - repeated value
+99 utterance 768 INFO Exhibit - repeated value
+99 utterance 772 INFO Exhibit - repeated value
+99 utterance 777 INFO Exhibit - repeated value
+99 utterance 780 INFO Exhibit - repeated value
+99 utterance 781 INFO Exhibit - repeated value
+99 utterance 783 INFO Exhibit - repeated value
+99 utterance 791 TYPE_OF_PLACE Market - repeated value
+99 utterance 792 TYPE_OF_PLACE Market - repeated value
+99 utterance 797 TYPE_OF_PLACE Market - repeated value
+99 utterance 798 TYPE_OF_PLACE Market - repeated value
+99 utterance 799 TYPE_OF_PLACE Market - repeated value
+99 utterance 807 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 824 TYPE_OF_PLACE Market - repeated value
+99 utterance 839 TYPE_OF_PLACE Market - repeated value
+99 utterance 840 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 841 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 843 TYPE_OF_PLACE Market - repeated value
+99 utterance 868 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 928 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 929 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 940 DISH Chilli crab - repeated value
+99 utterance 962 DISH Chilli crab - repeated value
+99 utterance 971 DISH Chilli crab - repeated value
+99 utterance 975 DISH Hainanese chicken rice - repeated value
+99 utterance 997 DISH Chilli crab - repeated value
+99 utterance 1028 NEIGHBOURHOOD Chinatown - repeated value
+99 utterance 1261 NEIGHBOURHOOD Little India - repeated value
+99 utterance 1263 NEIGHBOURHOOD Little India - repeated value
+99 utterance 1284 NEIGHBOURHOOD Little India - repeated value

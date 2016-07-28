@@ -1,0 +1,34 @@
+Found 33 errors:
+66 utterance 827 TO Merlion - repeated value
+66 utterance 1550 TO Sentosa - repeated value
+66 utterance 1552 TO Sentosa - repeated value
+67 utterance 480 INFO Pricerange - repeated value
+67 utterance 483 INFO Pricerange - repeated value
+67 utterance 1276 TO Sentosa - repeated value
+85 utterance 92 TO Sentosa - repeated value
+85 utterance 144 TO Sentosa - repeated value
+85 utterance 187 TO Sentosa - repeated value
+85 utterance 1303 TO Sentosa - repeated value
+85 utterance 1357 TO Merlion - repeated value
+86 utterance 325 TYPE MRT - repeated value
+86 utterance 326 TYPE MRT - repeated value
+86 utterance 327 TYPE MRT - repeated value
+86 utterance 328 TYPE MRT - repeated value
+86 utterance 329 TYPE MRT - repeated value
+86 utterance 330 TYPE MRT - repeated value
+86 utterance 331 TYPE MRT - repeated value
+86 utterance 332 TYPE MRT - repeated value
+86 utterance 1066 TO Funan DigitaLife Mall - repeated value
+87 utterance 191 TO Sentosa - repeated value
+87 utterance 788 TO Sentosa - repeated value
+87 utterance 792 TO Sentosa - repeated value
+98 utterance 596 TYPE MRT - repeated value
+98 utterance 597 TYPE MRT - repeated value
+98 utterance 598 TYPE MRT - repeated value
+98 utterance 599 TYPE MRT - repeated value
+98 utterance 600 TYPE MRT - repeated value
+98 utterance 601 TYPE MRT - repeated value
+98 utterance 602 TYPE MRT - repeated value
+98 utterance 788 TYPE_OF_PLACE Souvenir shop - repeated value
+98 utterance 789 TYPE_OF_PLACE Souvenir shop - repeated value
+99 utterance 159 NEIGHBOURHOOD Chinatown - repeated value

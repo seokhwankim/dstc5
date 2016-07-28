@@ -1,0 +1,13 @@
+team,entry,role,task,subtask,schedule,stat,N,result
+0,0,GUIDE,SAP,speech_act,all,precision,850,0.278823529412
+0,0,GUIDE,SAP,speech_act,all,recall,1669,0.142001198322
+0,0,GUIDE,SAP,speech_act,all,f1,2282,0.188169908694
+0,0,GUIDE,SAP,speech_act,act,precision,818,0.470660146699
+0,0,GUIDE,SAP,speech_act,act,recall,1239,0.310734463277
+0,0,GUIDE,SAP,speech_act,act,f1,1672,0.374331550802
+0,0,TOURIST,SAP,speech_act,all,precision,304,0.203947368421
+0,0,TOURIST,SAP,speech_act,all,recall,749,0.0827770360481
+0,0,TOURIST,SAP,speech_act,all,f1,991,0.117758784425
+0,0,TOURIST,SAP,speech_act,act,precision,217,0.428571428571
+0,0,TOURIST,SAP,speech_act,act,recall,696,0.133620689655
+0,0,TOURIST,SAP,speech_act,act,f1,820,0.203723986857

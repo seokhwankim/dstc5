@@ -1,0 +1,3 @@
+task, subtask, schedule, stat, N, result
+SLG, generated, all, am_fm_avg, 840, 0.2666213288
+SLG, generated, all, bleu_avg, 840, 0.332657368829
