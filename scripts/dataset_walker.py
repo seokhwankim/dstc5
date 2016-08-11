@@ -117,44 +117,43 @@ class Call(object):
             self.labels = None
 
     def __iter__(self):
+        log_dict = {}
+        for log in self.log['utterances']:
+            log_dict[log['utter_index']] = log
+
+        translations_dict = {}
         if (self.translations_filename != None):
-            if (self.labels_filename != None):
-                for (log, translations, labels) in zip(self.log['utterances'], self.translations['utterances'], self.labels['utterances']):
-                    if 'speech_act' in labels:
-                        for i in range(len(labels['speech_act'])):
-                            act = labels['speech_act'][i]['act'].strip().upper()
-                            if act == '':
-                                act = 'NONE'
-                            labels['speech_act'][i]['act'] = act
-                            for j in range(len(labels['speech_act'][i]['attributes'])):
-                                attr = labels['speech_act'][i]['attributes'][j].strip()
-                                if attr is None or attr == '':
-                                    attr = 'NONE'
-                                labels['speech_act'][i]['attributes'][j] = attr
+            for trans in self.translations['utterances']:
+                translations_dict[trans['utter_index']] = trans
 
-                    yield (log, translations, labels)
-            else:
-                for (log, translations) in zip(self.log['utterances'], self.translations['utterances']):
-                    yield (log, translations, None)
-        else:
-            if (self.labels_filename != None):
-                for (log, labels) in zip(self.log['utterances'],self.labels['utterances']):
-                    if 'speech_act' in labels:
-                        for i in range(len(labels['speech_act'])):
-                            act = labels['speech_act'][i]['act'].strip().upper()
-                            if act == '':
-                                act = 'NONE'
-                            labels['speech_act'][i]['act'] = act
-                            for j in range(len(labels['speech_act'][i]['attributes'])):
-                                attr = labels['speech_act'][i]['attributes'][j].strip()
-                                if attr is None or attr == '':
-                                    attr = 'NONE'
-                                labels['speech_act'][i]['attributes'][j] = attr
+        labels_dict = {}
+        if (self.labels_filename != None):
+            for label in self.labels['utterances']:
+                labels_dict[label['utter_index']] = label
 
-                    yield (log, None, labels)
-            else:
-                for log in self.log['utterances']:
-                    yield (log, None, None)
+        for utter_index in sorted(log_dict.keys()):
+            log = log_dict[utter_index]
+
+            trans = None
+            if utter_index in translations_dict:
+                trans = translations_dict[utter_index]
+
+            labels = None
+            if utter_index in labels_dict:
+                labels = labels_dict[utter_index]
+                if 'speech_act' in labels:
+                    for i in range(len(labels['speech_act'])):
+                        act = labels['speech_act'][i]['act'].strip().upper()
+                        if act == '':
+                            act = 'NONE'
+                        labels['speech_act'][i]['act'] = act
+                        for j in range(len(labels['speech_act'][i]['attributes'])):
+                            attr = labels['speech_act'][i]['attributes'][j].strip()
+                            if attr is None or attr == '':
+                                attr = 'NONE'
+                            labels['speech_act'][i]['attributes'][j] = attr
+            
+            yield (log, trans, labels)
 
     def __len__(self, ):
         return len(self.log['utterances'])
