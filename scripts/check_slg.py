@@ -14,7 +14,7 @@ def main(argv):
     sys.path.append(utils_dirname)
     from dataset_walker import dataset_walker
 
-    parser = argparse.ArgumentParser(description='Check the validity of a system output for SAP task.')
+    parser = argparse.ArgumentParser(description='Check the validity of a system output for SLG task.')
     parser.add_argument('--dataset', dest='dataset', action='store', metavar='DATASET', required=True, help='The dataset to analyze')
     parser.add_argument('--dataroot',dest='dataroot',action='store', metavar='PATH', required=True, help='Will look for corpus in <destroot>/...')
     parser.add_argument('--jsonfile',dest='jsonfile',action='store',metavar='JSON_FILE',required=True, help='File containing JSON output')
@@ -69,7 +69,7 @@ class TrackChecker():
 
         if "task_type" not in self.tracker_output :
             self.add_error(("top level",),"task_type should be specified")
-        elif self.tracker_output['task_type'] != 'SAP':
+        elif self.tracker_output['task_type'] != 'SLG':
             self.add_error(("top level",),"task_type does not match")
 
         if "role_type" not in self.tracker_output:

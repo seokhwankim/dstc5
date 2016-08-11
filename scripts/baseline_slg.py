@@ -63,12 +63,12 @@ def main(argv):
     parser.add_argument('--trainset', dest='trainset', action='store', metavar='TRAINSET', required=True, help='The training dataset')
     parser.add_argument('--testset', dest='testset', action='store', metavar='TESTSET', required=True, help='The test dataset')
     parser.add_argument('--dataroot', dest='dataroot', action='store', required=True, metavar='PATH',  help='Will look for corpus in <destroot>/...')
-    parser.add_argument('--outfile', dest='outfile', action='store', required=True, metavar='JSON_FILE',  help='File to write with SAP output')
+    parser.add_argument('--outfile', dest='outfile', action='store', required=True, metavar='JSON_FILE',  help='File to write with SLG output')
     parser.add_argument('--roletype', dest='roletype', action='store', choices=['GUIDE',  'TOURIST'], required=True,  help='Target role')
 
     args = parser.parse_args()
 
-    sap = SimpleSLG()
+    slg = SimpleSLG()
 
     trainset = dataset_walker.dataset_walker(args.trainset, dataroot=args.dataroot, labels=True, translations=True, task='SLG', roletype=args.roletype.lower())
     sys.stderr.write('Loading training instances ... ')
@@ -77,14 +77,14 @@ def main(argv):
         for (log_utter, translations, label_utter) in call:
             if log_utter['speaker'].lower() == args.roletype.lower():
                 instance = {'semantic_tags': log_utter['semantic_tags'], 'speech_act': log_utter['speech_act']}
-                sap.add_instance(instance, translations)
+                slg.add_instance(instance, translations)
 
-    sap.train()
+    slg.train()
     sys.stderr.write('Done\n')
 
     output = {'sessions': []}
     output['dataset'] = args.testset
-    output['task_type'] = 'SAP'
+    output['task_type'] = 'SLG'
     output['role_type'] = args.roletype
     start_time = time.time()
 
@@ -97,7 +97,7 @@ def main(argv):
             if log_utter['speaker'].lower() == args.roletype.lower():
                 instance = {'semantic_tags': log_utter['semantic_tags'], 'speech_act': log_utter['speech_act']}
 
-                slg_result = {'utter_index': log_utter['utter_index'], 'generated': sap.generate(instance)}
+                slg_result = {'utter_index': log_utter['utter_index'], 'generated': slg.generate(instance)}
                 this_session['utterances'].append(slg_result)
 
         output['sessions'].append(this_session)
